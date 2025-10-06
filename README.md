@@ -112,6 +112,7 @@ Set up data directories
 
 mkdir -p data/pdfs models logs
 # 📁 Project Structure
+```bash
 wattbot_rag/
 ├── config/                 # Configuration settings
 │   └── settings.py
@@ -136,6 +137,7 @@ wattbot_rag/
 ├── main.py               # Main pipeline entry point
 └── requirements.txt      # Python dependencies
 ```
+
 ⚙️ Configuration
 Edit config/settings.py to customize:
 
