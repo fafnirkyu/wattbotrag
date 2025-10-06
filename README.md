@@ -1,7 +1,7 @@
-WattBot RAG - Scientific Question Answering System
+## WattBot RAG - Scientific Question Answering System
 A high-performance Retrieval-Augmented Generation (RAG) pipeline developed for the Kaggle "LLM Science Exam" Competition, achieving a score of 0.185 by balancing sophisticated retrieval techniques with computational efficiency.
 
-🏆 Competition Context
+# 🏆 Competition Context
 This project was developed for the Kaggle LLM Science Exam competition, where the goal was to answer complex scientific questions using a corpus of academic papers. The challenge required:
 
 Accuracy: Providing precise, well-supported answers from scientific literature
@@ -12,7 +12,7 @@ Robustness: Handling diverse scientific domains and question types
 
 Final Score: 0.185 - Demonstrating competitive performance against other ML practitioners.
 
-🚀 Features
+# 🚀 Features
 Document Processing: Automatic PDF downloading and text extraction with intelligent chunking
 
 Hybrid Retrieval: Combines vector similarity (FAISS) with TF-IDF for robust document retrieval
@@ -29,7 +29,7 @@ Parallel Processing: Efficient PDF processing and embedding generation
 
 Comprehensive Logging: Detailed logging for debugging and monitoring
 
-⚖️ Technical Challenges & Solutions
+# ⚖️ Technical Challenges & Solutions
 The Accuracy vs. Performance Balancing Act
 One of the most significant challenges was finding the right balance between retrieval accuracy and computational efficiency:
 
@@ -85,14 +85,14 @@ Benefits Realized:
 
 ✅ Maintained competitive accuracy (0.185 score)
 
-📋 Prerequisites
+# 📋 Prerequisites
 Python 3.8+
 
 CUDA-capable GPU (recommended for best performance)
 
 At least 8GB RAM (16GB+ recommended)
 
-🛠 Installation
+# 🛠 Installation
 Clone the repository
 
 ```bash
@@ -111,7 +111,7 @@ Set up data directories
 ```
 
 mkdir -p data/pdfs models logs
-📁 Project Structure
+# 📁 Project Structure
 wattbot_rag/
 ├── config/                 # Configuration settings
 │   └── settings.py
@@ -161,7 +161,7 @@ TOP_K_RERANK = 5              # Final candidates after reranking
 CHUNK_TOKENS = 300            # Optimized token limit for precision
 ```
 
-🏃‍♂️ Quick Start
+# 🏃‍♂️ Quick Start
 Prepare your data:
 
 Place metadata.csv in the data/ directory
@@ -187,7 +187,7 @@ Process test questions and generate answers
 
 Save results to submission.csv
 
-🎯 Performance Optimizations
+# 🎯 Performance Optimizations
 Retrieval Optimizations
 Hybrid Search: Vector + TF-IDF fusion for recall improvement
 
@@ -213,7 +213,7 @@ Reranker: ms-marco-MiniLM-L-6-v2 - Lightweight but effective
 
 Generator: Qwen2.5-1.5B-Instruct - Strong reasoning within constraints
 
-📊 Results & Lessons Learned
+# 📊 Results & Lessons Learned
 Competition Performance
 Score: 0.185 (Top 30% performance range)
 
@@ -241,7 +241,7 @@ Comprehensive Logging: Provided insights for iterative improvement
 
 Error Resilience: Graceful fallbacks maintained pipeline stability
 
-🔧 Advanced Usage
+# 🔧 Advanced Usage
 Fine-tuning the Retriever
 Prepare training data in data/train_QA.csv
 
@@ -263,7 +263,7 @@ HF_MODEL_NAME = "microsoft/DialoGPT-large"
 RERANKER_MODEL = "cross-encoder/ms-marco-TinyBERT-L-2-v2"  # Faster, less accurate
 ```
 
-🐛 Troubleshooting
+# 🐛 Troubleshooting
 Common Issues
 Out of Memory Errors
 
@@ -288,7 +288,7 @@ Check Hugging Face access for gated models
 Logs
 Check logs/wattbot_run.log for detailed execution logs and error messages.
 
-🤝 Contributing
+# 🤝 Contributing
 This project demonstrates real-world tradeoffs in production ML systems. Contributions welcome for:
 
 Performance optimizations
@@ -299,5 +299,5 @@ Enhanced retrieval strategies
 
 Documentation improvements
 
-📄 License
+# 📄 License
 This project is available for portfolio and educational use. Please check individual model licenses for commercial use.
